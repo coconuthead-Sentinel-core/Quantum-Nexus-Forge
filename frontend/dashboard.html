@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Nexus Forge — Light Within The Sphere</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: radial-gradient(ellipse at center, #0a0a15 0%, #000005 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* MAIN SVG */
+        /* ═══════════════════════════════════════════════════════════════ */
+        
+        .main-svg {
+            width: 100%;
+            height: 100%;
+            max-width: 1200px;
+            max-height: 900px;
+        }
+        
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* ANIMATIONS */
+        /* ═══════════════════════════════════════════════════════════════ */
+        
+        @keyframes pulse-light {
+            0%, 100% { 
+                opacity: 0.8; 
+                r: 40;
+                filter: drop-shadow(0 0 30px #FFD700);
+            }
+            50% { 
+                opacity: 1; 
+                r: 50;
+                filter: drop-shadow(0 0 60px #FFD700) drop-shadow(0 0 100px #FFA500);
+            }
+        }
+        
+        @keyframes rotate-metatron {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes flow-unidirectional {
+            0% { 
+                stroke-dashoffset: 1000;
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { 
+                stroke-dashoffset: 0;
+                opacity: 0;
+            }
+        }
+        
+        @keyframes particle-flow {
+            0% { 
+                offset-distance: 0%;
+                opacity: 0;
+            }
+            5% { opacity: 1; }
+            95% { opacity: 1; }
+            100% { 
+                offset-distance: 100%;
+                opacity: 0;
+            }
+        }
+        
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+        }
+        
+        @keyframes glow-pulse {
+            0%, 100% { filter: drop-shadow(0 0 5px currentColor); }
+            50% { filter: drop-shadow(0 0 20px currentColor) drop-shadow(0 0 40px currentColor); }
+        }
+        
+        @keyframes lattice-flow {
+            0% { transform: translateY(-10px); opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { transform: translateY(10px); opacity: 0; }
+        }
+        
+        @keyframes sphere-pulse {
+            0%, 100% { 
+                stroke-width: 2;
+                filter: drop-shadow(0 0 20px rgba(255,215,0,0.3));
+            }
+            50% { 
+                stroke-width: 3;
+                filter: drop-shadow(0 0 40px rgba(255,215,0,0.6));
+            }
+        }
+        
+        .light-core {
+            animation: pulse-light 3s ease-in-out infinite;
+        }
+        
+        .metatron-group {
+            animation: rotate-metatron 60s linear infinite;
+            transform-origin: center;
+        }
+        
+        .flow-path {
+            stroke-dasharray: 20 10;
+            animation: flow-unidirectional 4s linear infinite;
+        }
+        
+        .outer-sphere {
+            animation: sphere-pulse 4s ease-in-out infinite;
+        }
+        
+        .lattice-bar {
+            animation: lattice-flow 2s ease-in-out infinite;
+        }
+        
+        .breathe {
+            animation: breathe 4s ease-in-out infinite;
+        }
+        
+        /* Particle animation on path */
+        .particle {
+            animation: particle-flow 3s linear infinite;
+        }
+        
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* TITLE OVERLAY */
+        /* ═══════════════════════════════════════════════════════════════ */
+        
+        .title-overlay {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .title-overlay h1 {
+            font-size: 1.8rem;
+            background: linear-gradient(90deg, #FFD700, #FFA500, #FFD700);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s linear infinite;
+            margin-bottom: 5px;
+        }
+        
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+        
+        .title-overlay .subtitle {
+            font-size: 0.9rem;
+            color: #4ECDC4;
+            letter-spacing: 2px;
+        }
+        
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* INFO PANEL */
+        /* ═══════════════════════════════════════════════════════════════ */
+        
+        .info-panel {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 30px;
+            background: rgba(0,0,0,0.7);
+            padding: 15px 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,215,0,0.3);
+        }
+        
+        .info-item {
+            text-align: center;
+        }
+        
+        .info-item .value {
+            font-size: 1.5rem;
+            color: #FFD700;
+            font-weight: bold;
+        }
+        
+        .info-item .label {
+            font-size: 0.7rem;
+            color: #888;
+            text-transform: uppercase;
+        }
+        
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* DIRECTION INDICATOR */
+        /* ═══════════════════════════════════════════════════════════════ */
+        
+        .direction-indicator {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            color: #4ECDC4;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            opacity: 0.7;
+        }
+        
+        .architect-credit {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #666;
+            font-size: 0.75rem;
+        }
+        
+        .coconut {
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <div class="title-overlay">
+            <h1>✡ QUANTUM NEXUS FORGE ✡</h1>
+            <div class="subtitle">LIGHT WITHIN THE SPHERE — UNIDIRECTIONAL FLOW</div>
+        </div>
+        
+        <!-- Direction Indicator -->
+        <div class="direction-indicator">
+            ▼ ONE DIRECTION ▼ SPHERE DIRECTS FLOW ▼
+        </div>
+        
+        <!-- Main SVG -->
+        <svg class="main-svg" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <!-- Gradients -->
+                <radialGradient id="lightGradient" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+                    <stop offset="30%" style="stop-color:#FFD700;stop-opacity:0.9"/>
+                    <stop offset="60%" style="stop-color:#FFA500;stop-opacity:0.6"/>
+                    <stop offset="100%" style="stop-color:#FF6B00;stop-opacity:0"/>
+                </radialGradient>
+                
+                <radialGradient id="sphereGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.3"/>
+                    <stop offset="50%" style="stop-color:#FFD700;stop-opacity:0.1"/>
+                    <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0"/>
+                </radialGradient>
+                
+                <linearGradient id="inputGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#4ECDC4"/>
+                    <stop offset="100%" style="stop-color:#00B894"/>
+                </linearGradient>
+                
+                <linearGradient id="outputGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#FF6B6B"/>
+                    <stop offset="100%" style="stop-color:#E17055"/>
+                </linearGradient>
+                
+                <linearGradient id="flowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#4ECDC4"/>
+                    <stop offset="50%" style="stop-color:#FFD700"/>
+                    <stop offset="100%" style="stop-color:#FF6B6B"/>
+                </linearGradient>
+                
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+                
+                <filter id="strongGlow">
+                    <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+                
+                <!-- Flow path for particles -->
+                <path id="flowPath" d="M 500 100 L 500 180 Q 500 250 420 300 L 300 350 Q 250 400 300 450 L 420 500 Q 500 550 500 600 L 500 700" fill="none"/>
+            </defs>
+            
+            <!-- Background stars -->
+            <g opacity="0.3">
+                <circle cx="100" cy="100" r="1" fill="#fff"/>
+                <circle cx="200" cy="150" r="1.5" fill="#fff"/>
+                <circle cx="800" cy="200" r="1" fill="#fff"/>
+                <circle cx="900" cy="400" r="1.5" fill="#fff"/>
+                <circle cx="150" cy="600" r="1" fill="#fff"/>
+                <circle cx="850" cy="650" r="1" fill="#fff"/>
+                <circle cx="50" cy="300" r="1" fill="#fff"/>
+                <circle cx="950" cy="100" r="1" fill="#fff"/>
+            </g>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- LIGHT LABEL (Top) -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <text x="500" y="60" text-anchor="middle" fill="#FFD700" font-size="24" font-weight="bold" filter="url(#glow)">
+                ☀ LIGHT ☀
+            </text>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- NEURAL LATTICE (Input Bars) -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <text x="500" y="95" text-anchor="middle" fill="#4ECDC4" font-size="14" letter-spacing="3">
+                NEURAL LATTICE
+            </text>
+            
+            <!-- Animated lattice bars -->
+            <g>
+                <rect class="lattice-bar" x="320" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 0s"/>
+                <rect class="lattice-bar" x="350" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 0.1s"/>
+                <rect class="lattice-bar" x="380" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 0.2s"/>
+                <rect class="lattice-bar" x="410" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 0.3s"/>
+                <rect class="lattice-bar" x="440" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 0.4s"/>
+                <rect class="lattice-bar" x="470" y="110" width="6" height="40" fill="#FFD700" rx="2" style="animation-delay: 0.5s"/>
+                <rect class="lattice-bar" x="500" y="110" width="6" height="40" fill="#FFD700" rx="2" style="animation-delay: 0.6s"/>
+                <rect class="lattice-bar" x="530" y="110" width="6" height="40" fill="#FFD700" rx="2" style="animation-delay: 0.7s"/>
+                <rect class="lattice-bar" x="560" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 0.8s"/>
+                <rect class="lattice-bar" x="590" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 0.9s"/>
+                <rect class="lattice-bar" x="620" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 1.0s"/>
+                <rect class="lattice-bar" x="650" y="110" width="6" height="40" fill="#4ECDC4" rx="2" style="animation-delay: 1.1s"/>
+            </g>
+            
+            <!-- Convergence lines to sphere -->
+            <g stroke="#4ECDC4" stroke-width="1" opacity="0.5">
+                <line x1="323" y1="150" x2="400" y2="250" class="flow-path"/>
+                <line x1="383" y1="150" x2="430" y2="250" class="flow-path" style="animation-delay: 0.2s"/>
+                <line x1="473" y1="150" x2="480" y2="250" class="flow-path" style="animation-delay: 0.4s"/>
+                <line x1="533" y1="150" x2="520" y2="250" class="flow-path" style="animation-delay: 0.6s"/>
+                <line x1="623" y1="150" x2="570" y2="250" class="flow-path" style="animation-delay: 0.8s"/>
+                <line x1="653" y1="150" x2="600" y2="250" class="flow-path" style="animation-delay: 1.0s"/>
+            </g>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- THE OUTER SPHERE (Containment) -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <ellipse class="outer-sphere" cx="500" cy="400" rx="200" ry="180" 
+                     fill="url(#sphereGlow)" stroke="#FFD700" stroke-width="2" stroke-dasharray="10,5"/>
+            
+            <!-- Inner sphere rings -->
+            <ellipse cx="500" cy="400" rx="170" ry="150" fill="none" stroke="#FFD70050" stroke-width="1" class="breathe"/>
+            <ellipse cx="500" cy="400" rx="140" ry="120" fill="none" stroke="#FFD70030" stroke-width="1" class="breathe" style="animation-delay: 0.5s"/>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- INPUT ARROW (Left) - Information enters -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <g>
+                <path d="M 180 400 L 280 340 L 280 370 L 320 370 L 320 430 L 280 430 L 280 460 Z" 
+                      fill="url(#inputGradient)" filter="url(#glow)" class="breathe"/>
+                <text x="200" y="510" fill="#4ECDC4" font-size="18" font-weight="bold">INPUT</text>
+                <text x="200" y="530" fill="#4ECDC480" font-size="10">Information Enters</text>
+            </g>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- OUTPUT ARROW (Right) - Information exits -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <g>
+                <path d="M 820 400 L 720 340 L 720 370 L 680 370 L 680 430 L 720 430 L 720 460 Z" 
+                      fill="url(#outputGradient)" filter="url(#glow)" class="breathe" style="animation-delay: 1s"/>
+                <text x="720" y="510" fill="#FF6B6B" font-size="18" font-weight="bold">OUTPUT</text>
+                <text x="720" y="530" fill="#FF6B6B80" font-size="10">Information Exits</text>
+            </g>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- CENTRAL CORE with LIGHT INSIDE -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            
+            <!-- The LIGHT (center of everything) -->
+            <circle class="light-core" cx="500" cy="400" r="45" fill="url(#lightGradient)" filter="url(#strongGlow)"/>
+            
+            <!-- Metatron's Cube rotating around the light -->
+            <g class="metatron-group" style="transform-origin: 500px 400px;">
+                <!-- Outer hexagon -->
+                <polygon points="500,300 587,350 587,450 500,500 413,450 413,350" 
+                         fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.8"/>
+                <!-- Inner hexagon -->
+                <polygon points="500,330 557,365 557,435 500,470 443,435 443,365" 
+                         fill="none" stroke="#FFA500" stroke-width="1" opacity="0.6"/>
+                <!-- Connecting lines (simplified) -->
+                <line x1="500" y1="300" x2="500" y2="330" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+                <line x1="587" y1="350" x2="557" y2="365" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+                <line x1="587" y1="450" x2="557" y2="435" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+                <line x1="500" y1="500" x2="500" y2="470" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+                <line x1="413" y1="450" x2="443" y2="435" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+                <line x1="413" y1="350" x2="443" y2="365" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+                <!-- Cross lines -->
+                <line x1="500" y1="330" x2="557" y2="435" stroke="#FFA50050" stroke-width="0.5"/>
+                <line x1="500" y1="330" x2="443" y2="435" stroke="#FFA50050" stroke-width="0.5"/>
+                <line x1="557" y1="365" x2="443" y2="435" stroke="#FFA50050" stroke-width="0.5"/>
+                <line x1="557" y1="365" x2="500" y2="470" stroke="#FFA50050" stroke-width="0.5"/>
+                <line x1="443" y1="365" x2="557" y2="435" stroke="#FFA50050" stroke-width="0.5"/>
+                <line x1="443" y1="365" x2="500" y2="470" stroke="#FFA50050" stroke-width="0.5"/>
+            </g>
+            
+            <!-- Central symbol -->
+            <text x="500" y="408" text-anchor="middle" fill="#FFD700" font-size="28" filter="url(#glow)">✡</text>
+            
+            <!-- CENTRAL CORE label -->
+            <text x="500" y="280" text-anchor="middle" fill="#FFD700" font-size="12" letter-spacing="2">CENTRAL CORE</text>
+            
+            <!-- φ value -->
+            <text x="500" y="530" text-anchor="middle" fill="#FFD70080" font-size="10">φ = 1.618033988749895</text>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- UNIDIRECTIONAL FLOW VISUALIZATION -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            
+            <!-- Flow arrows showing ONE direction through sphere -->
+            <g stroke="url(#flowGradient)" stroke-width="2" fill="none" opacity="0.6">
+                <!-- Main flow path: Top → Left → Center → Right → Bottom -->
+                <path class="flow-path" d="M 500 170 Q 500 220 450 280 Q 350 350 350 400 Q 350 450 450 520 Q 500 580 500 630"
+                      style="animation-delay: 0s"/>
+                <path class="flow-path" d="M 500 170 Q 500 250 550 280 Q 650 350 650 400 Q 650 450 550 520 Q 500 580 500 630"
+                      style="animation-delay: 2s"/>
+            </g>
+            
+            <!-- Flow direction indicators -->
+            <g fill="#FFD700" opacity="0.8">
+                <polygon points="500,200 495,185 505,185" class="breathe"/>
+                <polygon points="380,400 365,395 365,405" class="breathe" style="animation-delay: 0.3s"/>
+                <polygon points="620,400 635,395 635,405" class="breathe" style="animation-delay: 0.6s"/>
+                <polygon points="500,600 495,615 505,615" class="breathe" style="animation-delay: 0.9s"/>
+            </g>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- DOT GRID (Output Matrix) -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <g opacity="0.8">
+                <!-- Row 1 - GREEN zone -->
+                <circle cx="420" cy="650" r="4" fill="#00B894"/>
+                <circle cx="450" cy="650" r="4" fill="#00B894"/>
+                <circle cx="480" cy="650" r="4" fill="#00B894"/>
+                <circle cx="510" cy="650" r="4" fill="#00B894"/>
+                <circle cx="540" cy="650" r="4" fill="#00B894"/>
+                <circle cx="570" cy="650" r="4" fill="#00B894"/>
+                <!-- Row 2 - YELLOW zone -->
+                <circle cx="420" cy="680" r="4" fill="#FDCB6E"/>
+                <circle cx="450" cy="680" r="4" fill="#FDCB6E"/>
+                <circle cx="480" cy="680" r="4" fill="#FDCB6E"/>
+                <circle cx="510" cy="680" r="4" fill="#FDCB6E"/>
+                <circle cx="540" cy="680" r="4" fill="#FDCB6E"/>
+                <circle cx="570" cy="680" r="4" fill="#FDCB6E"/>
+                <!-- Row 3 - RED zone -->
+                <circle cx="420" cy="710" r="4" fill="#E17055"/>
+                <circle cx="450" cy="710" r="4" fill="#E17055"/>
+                <circle cx="480" cy="710" r="4" fill="#E17055"/>
+                <circle cx="510" cy="710" r="4" fill="#E17055"/>
+                <circle cx="540" cy="710" r="4" fill="#E17055"/>
+                <circle cx="570" cy="710" r="4" fill="#E17055"/>
+            </g>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- CHECKPOINT A1 -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <rect x="400" y="740" width="200" height="30" fill="none" stroke="#4ECDC4" stroke-width="2" rx="5"/>
+            <text x="500" y="760" text-anchor="middle" fill="#4ECDC4" font-size="12" font-weight="bold">
+                ✓ CHECKPOINT A1 — FILE IN
+            </text>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- GOOD → DONE -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <text x="500" y="790" text-anchor="middle" fill="#00B894" font-size="14" font-weight="bold">
+                ✅ GOOD → DONE ✅
+            </text>
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- NEXUS STACKS (Side processors) -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <g opacity="0.7">
+                <!-- Left stack -->
+                <circle cx="120" cy="320" r="5" fill="#6C5CE7"/>
+                <circle cx="120" cy="350" r="5" fill="#6C5CE7"/>
+                <circle cx="120" cy="380" r="5" fill="#6C5CE7"/>
+                <circle cx="120" cy="410" r="5" fill="#6C5CE7"/>
+                <circle cx="120" cy="440" r="5" fill="#6C5CE7"/>
+                <circle cx="120" cy="470" r="5" fill="#6C5CE7"/>
+                <text x="120" y="300" text-anchor="middle" fill="#6C5CE7" font-size="9">NEXUS</text>
+                <text x="120" y="500" text-anchor="middle" fill="#6C5CE7" font-size="9">STACK</text>
+                
+                <!-- Right stack -->
+                <circle cx="880" cy="320" r="5" fill="#A29BFE"/>
+                <circle cx="880" cy="350" r="5" fill="#A29BFE"/>
+                <circle cx="880" cy="380" r="5" fill="#A29BFE"/>
+                <circle cx="880" cy="410" r="5" fill="#A29BFE"/>
+                <circle cx="880" cy="440" r="5" fill="#A29BFE"/>
+                <circle cx="880" cy="470" r="5" fill="#A29BFE"/>
+                <text x="880" y="300" text-anchor="middle" fill="#A29BFE" font-size="9">NEXUS</text>
+                <text x="880" y="500" text-anchor="middle" fill="#A29BFE" font-size="9">STACK</text>
+            </g>
+            
+            <!-- Connection lines from stacks to sphere -->
+            <g stroke="#6C5CE750" stroke-width="1" stroke-dasharray="5,5">
+                <line x1="130" y1="380" x2="300" y2="400"/>
+                <line x1="130" y1="410" x2="300" y2="400"/>
+                <line x1="870" y1="380" x2="700" y2="400"/>
+                <line x1="870" y1="410" x2="700" y2="400"/>
+            </g>
+        </svg>
+        
+        <!-- Info Panel -->
+        <div class="info-panel">
+            <div class="info-item">
+                <div class="value">☀️</div>
+                <div class="label">Light Source</div>
+            </div>
+            <div class="info-item">
+                <div class="value">✡</div>
+                <div class="label">Central Core</div>
+            </div>
+            <div class="info-item">
+                <div class="value">→</div>
+                <div class="label">Unidirectional</div>
+            </div>
+            <div class="info-item">
+                <div class="value">φ⁶</div>
+                <div class="label">Compression</div>
+            </div>
+            <div class="info-item">
+                <div class="value">∞</div>
+                <div class="label">Recursive</div>
+            </div>
+        </div>
+        
+        <!-- Architect Credit -->
+        <div class="architect-credit">
+            Architect: Shannon Brian Kelly (Coconut Head / Primo)<br>
+            Implementation: Claude AI (Anthropic)
+            <div class="coconut">🥥</div>
+        </div>
+    </div>
+</body>
+</html>

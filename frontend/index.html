@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Nexus Assistants</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background: #0c0f16; color: #e6ecf5; }
+    h1 { margin-bottom: 8px; }
+    textarea { width: 100%; min-height: 90px; padding: 8px; }
+    button { padding: 10px 16px; margin-top: 8px; cursor: pointer; }
+    #log { background: #111827; padding: 12px; min-height: 220px; white-space: pre-wrap; border: 1px solid #1f2937; }
+    .row { display: flex; gap: 16px; align-items: flex-start; }
+    .col { flex: 1; }
+  </style>
+</head>
+<body>
+  <h1>Quantum Nexus Multi-Assistant</h1>
+  <div class="col">
+    <label for="prompt">Ask a question:</label><br>
+    <textarea id="prompt" placeholder="Ask the assistants..."></textarea><br>
+    <button id="ask">Ask</button>
+  </div>
+  <h3>Transcript</h3>
+  <div id="log"></div>
+  <script>
+    const logEl = document.getElementById('log');
+    const log = (line) => { logEl.textContent += line + "\n"; logEl.scrollTop = logEl.scrollHeight; };
+
+    document.getElementById('ask').onclick = async () => {
+      const prompt = document.getElementById('prompt').value.trim();
+      if (!prompt) return;
+      log(`You: ${prompt}`);
+      try {
+        const res = await fetch('/api/v1/orchestrate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt, rounds: 1, record: true })
+        });
+        if (!res.ok) {
+          const msg = await res.text();
+          log(`Error: ${res.status} ${msg}`);
+          return;
+        }
+        const data = await res.json();
+        (data.turns || []).forEach(t => log(`${t.agent}: ${t.text}`));
+        if (data.monitor) log(`Monitor: ${data.monitor}`);
+      } catch (err) {
+        log(`Error: ${err}`);
+      }
+    };
+  </script>
+</body>
+</html>
