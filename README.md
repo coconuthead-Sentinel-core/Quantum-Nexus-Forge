@@ -1,4 +1,4 @@
-# Quantum Nexus Forge v5.0.1
+# Quantum Nexus Forge v5.0.2
 
 **Architect:** Shannon Brian Kelly  
 **Implementation:** Claude AI (Anthropic)  
@@ -90,17 +90,14 @@ curl -X POST http://localhost:5000/api/v1/orchestrate \
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/quantum-nexus-forge.git
-cd quantum-nexus-forge
+git clone https://github.com/coconuthead-Sentinel-core/Quantum-Nexus-Forge.git
+cd Quantum-Nexus-Forge
 
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Start the server
+# 2. Start the server (Flask installs automatically if missing)
 python app.py
 ```
 
-Then open your browser:
+Your browser opens automatically to the Multi-Assistant UI.
 
 - **Multi-Assistant UI:** http://localhost:5000/
 - **Visual Dashboard:** http://localhost:5000/dashboard
@@ -138,6 +135,20 @@ Each agent independently processes the same prompt and contributes a turn to the
 This system was designed as part of a broader exploration of human-AI collaborative architecture — specifically how a non-traditional thinker (neurodivergent, systems-intuitive) can architect AI pipelines by directing multiple AI models as a coordinated team.
 
 The visual language (Metatron's Cube, sacred geometry, tri-zone memory) represents a symbolic cognitive framework developed iteratively with AI collaborators including ChatGPT, Claude, Gemini Advanced, and Sora.
+
+**The Forge did not start as code — it started as a real operational system** that Shannon ran manually across five live AI platforms (Copilot, Claude, Speechify, Labs, Microsoft 365). Each platform had a defined role and a defined position in the workflow. The Forge translates that human-operated system into automated software.
+
+Each named agent in the Forge maps directly to one of those real platforms:
+
+| Real Platform | Forge Agent |
+|---------------|-------------|
+| Shannon Bryan Kelly (Architect) | Shannon-Sentinel |
+| Speechify | Mirror-Pool |
+| Cross-platform relay | Nexus-Node |
+| Claude AI | Omega-1 |
+| Microsoft Copilot | A1-Forge |
+
+Full mapping and origin documentation: [`docs/workflow_architecture.md`](docs/workflow_architecture.md)
 
 ---
 
