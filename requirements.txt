@@ -1,2 +1,7 @@
 flask>=3.0.0
 flask-cors>=4.0.0
+
+# Azure integrations (optional — system runs in mock mode without these)
+openai>=1.30.0
+azure-cosmos>=4.6.0
+python-dotenv>=1.0.0

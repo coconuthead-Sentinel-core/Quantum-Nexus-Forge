@@ -35,6 +35,13 @@ def _ensure_deps():
 _ensure_deps()
 # ─────────────────────────────────────────────────────────────────────────────
 
+# Load .env file if present (never required — graceful skip if missing)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 import time
 import random
 import threading
@@ -267,6 +274,12 @@ class QuantumNexusEngine:
 
     def orchestrate(self, prompt: str, rounds: int = 1) -> Dict[str, Any]:
         """Multi-agent orchestration — called by POST /api/v1/orchestrate"""
+        # Import Azure adapter (supports live Azure OpenAI or mock fallback)
+        try:
+            from azure_adapter import get_agent_response
+        except ImportError:
+            get_agent_response = None
+
         turns = []
         for _ in range(max(1, min(rounds, 5))):
             result = self.processor.process_input(prompt)
@@ -274,7 +287,14 @@ class QuantumNexusEngine:
             zone   = self.filing.add_node(node)
             self.total_processed += 1
             agent  = random.choice(self.AGENTS)
-            turns.append({"agent": agent, "text": result["response"], "zone": zone})
+
+            # Use Azure adapter if available, otherwise use symbolic processor response
+            if get_agent_response is not None:
+                text = get_agent_response(agent, prompt, result["concepts"])
+            else:
+                text = result["response"]
+
+            turns.append({"agent": agent, "text": text, "zone": zone})
             self._log(f"{result['intent']} via {agent}", zone, "ORCHESTRATE")
 
         monitor = (
@@ -353,12 +373,18 @@ def metrics():
 @app.route("/api/status", methods=["GET"])
 def status():
     """GET /api/status — lightweight health check"""
+    try:
+        from azure_adapter import get_mode
+        ai_mode = get_mode()
+    except ImportError:
+        ai_mode = "mock"
     return jsonify({
         "status":          "GREEN",
         "version":         "5.0.2",
         "architect":       "Shannon Brian Kelly",
         "uptime_seconds":  int((datetime.now() - engine.start_time).total_seconds()),
         "resonance":       round(engine.resonance, 3),
+        "ai_mode":         ai_mode,
     })
 
 

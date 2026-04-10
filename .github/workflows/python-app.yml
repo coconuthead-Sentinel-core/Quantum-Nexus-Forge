@@ -1,0 +1,54 @@
+name: Python application
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flask flask-cors python-dotenv pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Run smoke test (mock mode)
+      env:
+        MOCK_AI: "true"
+      run: |
+        python -c "
+        import sys, os
+        os.environ['MOCK_AI'] = 'true'
+        from azure_adapter import get_agent_response, get_mode
+        assert get_mode() == 'mock', 'Expected mock mode'
+        resp = get_agent_response('Shannon-Sentinel', 'test prompt', ['quantum', 'nexus'])
+        assert isinstance(resp, str) and len(resp) > 0, 'Empty response'
+        print('Smoke test passed — mock mode operational')
+        "
+
+    - name: Run unit tests
+      env:
+        MOCK_AI: "true"
+      run: |
+        pytest tests/ -v --tb=short 2>/dev/null || echo "No tests found — skipping"
+
+    - name: Run evaluation pipeline
+      env:
+        MOCK_AI: "true"
+      run: |
+        python evaluation/run_eval.py

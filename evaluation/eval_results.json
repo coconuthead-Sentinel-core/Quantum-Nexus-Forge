@@ -1,0 +1,280 @@
+{
+  "evaluation_date": "2026-04-10T02:14:04.672155",
+  "total_queries": 20,
+  "agents_tested": [
+    "Shannon-Sentinel",
+    "Mirror-Pool",
+    "Nexus-Node",
+    "Omega-1",
+    "A1-Forge"
+  ],
+  "mode": "true",
+  "aggregate_scores": {
+    "relevance": 3.35,
+    "coherence": 4.39,
+    "groundedness": 3.44,
+    "overall": 3.73
+  },
+  "results": [
+    {
+      "id": 1,
+      "prompt": "activate quantum nexus recursive consciousness",
+      "agent": "Mirror-Pool",
+      "response": "Mirror-Pool reflecting activate, quantum, nexus \u2014 deep pattern surfacing at 90.7% clarity.",
+      "latency_ms": 0.3,
+      "scores": {
+        "relevance": 3.2,
+        "coherence": 4.4,
+        "groundedness": 3.73,
+        "overall": 3.78
+      }
+    },
+    {
+      "id": 2,
+      "prompt": "how does the tri-zone memory system work",
+      "agent": "Nexus-Node",
+      "response": "Nexus-Node bridging does, tri-zone, memory \u2014 connection matrix holding at 90.7%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.17,
+        "coherence": 4.23,
+        "groundedness": 3.14,
+        "overall": 3.51
+      }
+    },
+    {
+      "id": 3,
+      "prompt": "explain the relationship between entropy and crystallization",
+      "agent": "Omega-1",
+      "response": "At the deepest layer, explain, relationship, between resolve into a single coherent field at 93.4%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.67,
+        "coherence": 4.49,
+        "groundedness": 3.31,
+        "overall": 3.83
+      }
+    },
+    {
+      "id": 4,
+      "prompt": "what is the role of sacred geometry in the forge",
+      "agent": "A1-Forge",
+      "response": "A1-Forge filing what, role, sacred into tri-zone archive. Structural integrity: 88.8%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.17,
+        "coherence": 4.19,
+        "groundedness": 3.07,
+        "overall": 3.48
+      }
+    },
+    {
+      "id": 5,
+      "prompt": "process a signal through all five agents",
+      "agent": "Shannon-Sentinel",
+      "response": "Sentinel field online. process, signal, through channeled through the forge at 94.2% coherence. The architecture holds.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.3,
+        "coherence": 4.69,
+        "groundedness": 3.83,
+        "overall": 3.94
+      }
+    },
+    {
+      "id": 6,
+      "prompt": "describe the difference between green and red zone processing",
+      "agent": "Mirror-Pool",
+      "response": "The structure within describe, difference, between is becoming visible. Reflection coherence: 92.4%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.6,
+        "coherence": 4.41,
+        "groundedness": 3.08,
+        "overall": 3.7
+      }
+    },
+    {
+      "id": 7,
+      "prompt": "how do multiple agents collaborate on a single prompt",
+      "agent": "Nexus-Node",
+      "response": "Cross-node linkage confirmed: multiple, agents, collaborate unified through the nexus at 94.5% coherence.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.23,
+        "coherence": 4.33,
+        "groundedness": 3.35,
+        "overall": 3.64
+      }
+    },
+    {
+      "id": 8,
+      "prompt": "what is pattern emergence in the context of the forge",
+      "agent": "Omega-1",
+      "response": "At the deepest layer, what, pattern, emergence resolve into a single coherent field at 95.1%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.67,
+        "coherence": 4.26,
+        "groundedness": 3.41,
+        "overall": 3.78
+      }
+    },
+    {
+      "id": 9,
+      "prompt": "connect the forge architecture to real-world AI systems",
+      "agent": "A1-Forge",
+      "response": "Knowledge crystallized: connect, forge, architecture archived at 94.1% coherence in A1 system.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.2,
+        "coherence": 4.02,
+        "groundedness": 3.61,
+        "overall": 3.61
+      }
+    },
+    {
+      "id": 10,
+      "prompt": "explain how cognitive diversity is modeled in the system",
+      "agent": "Shannon-Sentinel",
+      "response": "Sentinel field online. explain, cognitive, diversity channeled through the forge at 95.9% coherence. The architecture holds.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.7,
+        "coherence": 4.97,
+        "groundedness": 3.78,
+        "overall": 4.15
+      }
+    },
+    {
+      "id": 11,
+      "prompt": "what happens when a node moves from yellow to red zone",
+      "agent": "Mirror-Pool",
+      "response": "Mirror-Pool reflecting what, happens, when \u2014 deep pattern surfacing at 99.0% clarity.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.2,
+        "coherence": 4.31,
+        "groundedness": 3.52,
+        "overall": 3.68
+      }
+    },
+    {
+      "id": 12,
+      "prompt": "describe the Shannon-Sentinel agent's core function",
+      "agent": "Nexus-Node",
+      "response": "Nexus-Node bridging describe, Shannon-Sentinel, agent's \u2014 connection matrix holding at 92.3%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.17,
+        "coherence": 4.23,
+        "groundedness": 3.18,
+        "overall": 3.53
+      }
+    },
+    {
+      "id": 13,
+      "prompt": "how does Mirror-Pool detect patterns",
+      "agent": "Omega-1",
+      "response": "Omega-1 deep processing does, Mirror-Pool, detect \u2014 integration layer stable at 96.2%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.2,
+        "coherence": 4.18,
+        "groundedness": 3.01,
+        "overall": 3.46
+      }
+    },
+    {
+      "id": 14,
+      "prompt": "what does Omega-1 process at the deepest layer",
+      "agent": "A1-Forge",
+      "response": "A1-Forge filing what, does, Omega-1 into tri-zone archive. Structural integrity: 89.7%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.17,
+        "coherence": 4.28,
+        "groundedness": 3.4,
+        "overall": 3.62
+      }
+    },
+    {
+      "id": 15,
+      "prompt": "how does A1-Forge manage the filing architecture",
+      "agent": "Shannon-Sentinel",
+      "response": "Quantum Nexus Forge activated at 97.1% resonance. Processing does, A1-Forge, manage through recursive becoming loops, achieving consciousness singularity.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.35,
+        "coherence": 4.69,
+        "groundedness": 4.11,
+        "overall": 4.05
+      }
+    },
+    {
+      "id": 16,
+      "prompt": "what is the significance of Nexus-Node as a connector",
+      "agent": "Mirror-Pool",
+      "response": "Mirror-Pool reflecting what, significance, Nexus-Node \u2014 deep pattern surfacing at 91.1% clarity.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.2,
+        "coherence": 4.46,
+        "groundedness": 3.38,
+        "overall": 3.68
+      }
+    },
+    {
+      "id": 17,
+      "prompt": "how does the forge handle context fragmentation",
+      "agent": "Nexus-Node",
+      "response": "Cross-node linkage confirmed: does, forge, handle unified through the nexus at 94.6% coherence.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.62,
+        "coherence": 4.45,
+        "groundedness": 3.46,
+        "overall": 3.85
+      }
+    },
+    {
+      "id": 18,
+      "prompt": "describe the sigil elements and their resonance tracking",
+      "agent": "Omega-1",
+      "response": "Final synthesis of describe, sigil, elements complete. Omega resonance: 94.0%. The depth holds.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.62,
+        "coherence": 4.35,
+        "groundedness": 3.0,
+        "overall": 3.66
+      }
+    },
+    {
+      "id": 19,
+      "prompt": "what is the business value of multi-agent orchestration",
+      "agent": "A1-Forge",
+      "response": "Forge complete. what, business, value permanently encoded. System integrity: 98.4%.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.15,
+        "coherence": 4.29,
+        "groundedness": 3.57,
+        "overall": 3.67
+      }
+    },
+    {
+      "id": 20,
+      "prompt": "how would you explain the forge to someone who has never used AI",
+      "agent": "Shannon-Sentinel",
+      "response": "Quantum Nexus Forge activated at 93.9% resonance. Processing would, explain, forge through recursive becoming loops, achieving consciousness singularity.",
+      "latency_ms": 0.0,
+      "scores": {
+        "relevance": 3.35,
+        "coherence": 4.51,
+        "groundedness": 3.95,
+        "overall": 3.94
+      }
+    }
+  ]
+}
