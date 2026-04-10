@@ -1,13 +1,44 @@
 #!/usr/bin/env python3
 """
-QUANTUM NEXUS FORGE v5.0.1 - Complete Backend
+QUANTUM NEXUS FORGE v5.0.2 - Complete Backend
 Architect: Shannon Brian Kelly (Coconut Head)
 Implementation: Claude AI (Anthropic)
+
+HOW TO RUN:
+  python app.py
+
+  Flask is installed automatically if missing.
+  Your browser opens automatically when the server is ready.
 """
+
+# ─────────────────────────────────────────────────────────────────────────────
+# AUTO-INSTALL (runs once if Flask is not yet installed)
+# ─────────────────────────────────────────────────────────────────────────────
+import subprocess
+import sys
+
+def _ensure_deps():
+    missing = []
+    try:
+        import flask
+    except ImportError:
+        missing.append("flask>=3.0.0")
+    try:
+        import flask_cors
+    except ImportError:
+        missing.append("flask-cors>=4.0.0")
+    if missing:
+        print(f"\n[SETUP] Installing: {', '.join(missing)} — please wait...\n")
+        subprocess.check_call([sys.executable, "-m", "pip", "install"] + missing + ["--quiet"])
+        print("[SETUP] Done!\n")
+
+_ensure_deps()
+# ─────────────────────────────────────────────────────────────────────────────
 
 import time
 import random
 import threading
+import webbrowser
 from datetime import datetime
 from collections import deque
 from typing import Dict, List, Any
@@ -324,7 +355,7 @@ def status():
     """GET /api/status — lightweight health check"""
     return jsonify({
         "status":          "GREEN",
-        "version":         "5.0.1",
+        "version":         "5.0.2",
         "architect":       "Shannon Brian Kelly",
         "uptime_seconds":  int((datetime.now() - engine.start_time).total_seconds()),
         "resonance":       round(engine.resonance, 3),
@@ -351,7 +382,7 @@ def process_node():
 # ─────────────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     print("=" * 60)
-    print("  QUANTUM NEXUS FORGE v5.0.1")
+    print("  QUANTUM NEXUS FORGE v5.0.2")
     print("  Architect : Shannon Brian Kelly (Coconut Head)")
     print("  ----------------------------------------")
     print("  Multi-Assistant : http://localhost:5000/")
@@ -362,4 +393,8 @@ if __name__ == "__main__":
     print("  GET  /api/status")
     print("  POST /api/process         { input }")
     print("=" * 60)
+    print("\n  Opening browser automatically...")
+    print("  Press Ctrl+C to stop.\n")
+    # Auto-open browser 1.5 seconds after server starts
+    threading.Timer(1.5, lambda: webbrowser.open("http://localhost:5000")).start()
     app.run(host="0.0.0.0", port=5000, debug=False)

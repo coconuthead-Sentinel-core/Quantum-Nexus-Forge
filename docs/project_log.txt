@@ -1,0 +1,198 @@
+================================================================================
+  QUANTUM NEXUS FORGE — PROJECT LOG
+  Created by: Shannon Bryan Kelly & Claude AI
+  Permanent Record of All Work and Decisions
+================================================================================
+
+PURPOSE OF THIS FILE:
+  This is the permanent on-disk record of every version, every decision,
+  and every known issue in the Quantum Nexus Forge project.
+  It lives inside the repo so nothing is ever lost between sessions.
+
+--------------------------------------------------------------------------------
+PROJECT IDENTITY
+--------------------------------------------------------------------------------
+
+  Name:       Quantum Nexus Forge
+  Architect:  Shannon Bryan Kelly (Coconut Head)
+  AI Partner: Claude AI (Anthropic) — primary technical implementation
+  Also worked with: ChatGPT, Gemini Advanced, Sora
+  Stack:      Python · Flask · HTML/CSS/JS · SVG Animation
+  GitHub:     https://github.com/coconuthead-Sentinel-core/Quantum-Nexus-Forge
+  Org:        coconuthead-Sentinel-core
+
+  Vision:
+    "Like a Windows 95 CD-ROM — you put it in, you hit run,
+     and the whole system comes online."
+    — Shannon Bryan Kelly
+
+  Goal:
+    A self-installing, click-to-run AI orchestration platform that:
+      - Routes user prompts through a multi-agent symbolic reasoning engine
+      - Shows an animated Metatron's Cube / sacred geometry visual dashboard
+      - Runs on Windows and Chromebook without setup steps
+      - Is marketable to humans and AI systems
+
+--------------------------------------------------------------------------------
+RELATED REPOSITORIES
+--------------------------------------------------------------------------------
+
+  1. Quantum-Nexus-Forge (THIS REPO — main project)
+     https://github.com/coconuthead-Sentinel-core/Quantum-Nexus-Forge
+     Language: Python + HTML
+     Created: August 24, 2025
+     Last updated: April 10, 2026
+
+  2. tri-node-sentinel-forge-quantum-nexus-build-log
+     https://github.com/coconuthead-Sentinel-core/tri-node-sentinel-forge-quantum-nexus-build-log
+     Purpose: Structured record of tri-AI orchestration and planning
+
+  3. sentinel-forge-cognitive-orchestrator
+     https://github.com/coconuthead-Sentinel-core/sentinel-forge-cognitive-orchestrator
+     Purpose: Related cognitive orchestration system
+
+--------------------------------------------------------------------------------
+SYSTEM ARCHITECTURE (current)
+--------------------------------------------------------------------------------
+
+  [ Browser Frontend ]
+      frontend/index.html       — Multi-assistant chat UI
+      frontend/dashboard.html   — Animated Metatron's Cube SVG dashboard
+
+           ↕  HTTP (fetch API)
+
+  [ Flask Backend — app.py ]
+      POST /api/v1/orchestrate  — Multi-agent prompt routing
+      GET  /api/metrics         — Live system snapshot
+      GET  /api/status          — Health check
+      POST /api/process         — Single symbolic processing pass
+      GET  /                    — Serves index.html
+      GET  /dashboard           — Serves dashboard.html
+
+           ↕  Internal engine
+
+  [ QuantumNexusEngine ]
+      SymbolicProcessor    — 7-slot consciousness matrix, concept extraction
+      A1FilingSystem       — Tri-zone memory (GREEN / YELLOW / RED)
+      QuantumNode          — Individual processing units (entropy + resonance)
+      Background Heartbeat — System updates every 3 seconds
+
+  TRI-ZONE MEMORY:
+      GREEN  — high entropy (> 0.7) — actively processing
+      YELLOW — mid entropy (0.4–0.7) — pattern emergence
+      RED    — low entropy (< 0.4) — crystallized knowledge
+
+--------------------------------------------------------------------------------
+AGENT ROSTER (official — must match across all files)
+--------------------------------------------------------------------------------
+
+  Shannon-Sentinel  — Lead Architect. Activates, leads, resonates at max energy.
+  Mirror-Pool       — Pattern Reflector. Detects emergence, initiates crystallization.
+  Nexus-Node        — Core Connector. Bridges concepts, finds cross-node linkage.
+  Omega-1           — Deep Processor. Integrates at the deepest layer.
+  A1-Forge          — Filing Architect. Classifies, archives, builds lasting structure.
+
+  SIGIL ELEMENTS (internal resonance tracking — not agent names):
+      CHALLENGE, EMERGE, MIRROR, GUIDE, FRIEND  (each 0.80–0.99)
+
+--------------------------------------------------------------------------------
+VERSION HISTORY
+--------------------------------------------------------------------------------
+
+VERSION 1.x (August 2025 – March 2026) — Initial exploration
+  Files: Multiple versions across local a3.txt and a10.txt sessions
+  Notes: Built with ChatGPT, Gemini Advanced, Sora, and Claude AI
+  Status: Archived — used as source for v5.0.1
+
+VERSION 5.0.1 (April 9, 2026) — Initial GitHub release
+  File: app.py (365 lines)
+  Committed: "Initial release: Quantum Nexus Forge v5.0.1"
+  What it had:
+    - Complete Flask backend with all 4 endpoints
+    - QuantumNode, A1FilingSystem, SymbolicProcessor, QuantumNexusEngine
+    - All 5 agent names correct (Shannon-Sentinel, Mirror-Pool, etc.)
+    - dashboard.html and index.html in frontend/
+    - requirements.txt (flask>=3.0.0, flask-cors>=4.0.0)
+  What was missing:
+    - Auto-install (user had to run pip install manually first)
+    - Auto-open browser (user had to navigate to localhost:5000 manually)
+    - Thread safety lock (background thread + request threads share state)
+    - docs/ folder for permanent project record
+
+VERSION 5.0.2 (April 10, 2026) — CURRENT
+  File: app.py (upgraded in-place)
+  What was added:
+    - _ensure_deps() at top: auto-installs Flask + flask-cors if missing
+    - webbrowser.open() in __main__: browser opens automatically on startup
+    - Version string bumped to 5.0.2 in /api/status response
+    - docs/project_log.txt: this file — permanent project record
+  What was NOT changed:
+    - All engine classes (QuantumNode, A1FilingSystem, SymbolicProcessor,
+      QuantumNexusEngine) — unchanged, working as-is
+    - All Flask routes — unchanged
+    - frontend/index.html and frontend/dashboard.html — unchanged
+    - requirements.txt — unchanged (still useful for manual install)
+
+--------------------------------------------------------------------------------
+KNOWN ISSUES (to address in future versions)
+--------------------------------------------------------------------------------
+
+  1. THREAD SAFETY — Medium priority
+     The _heartbeat() thread and Flask request handlers both access
+     self.filing, self.processor, etc. without a threading.Lock().
+     Risk: race condition under heavy traffic. For demo/low-traffic: acceptable.
+     Fix: Add threading.Lock() and wrap all shared-state access.
+
+  2. HOST BINDING — Low priority for now
+     app.run(host="0.0.0.0") means other devices on the same network can
+     reach the server. For personal use: fine. For public deployment: restrict
+     to host="127.0.0.1" or add authentication.
+
+  3. NO PERSISTENT STORAGE — Medium priority
+     All state resets when the server restarts (conversation log, node history).
+     Fix: Add SQLite database for persistence.
+
+  4. SIMULATED METRICS — By design for now
+     All metrics (resonance, performance, entropy) are generated randomly.
+     Future: connect to real data sources.
+
+  5. AGENT RESPONSES ARE TEMPLATE-BASED — By design for now
+     Agents respond using pre-built templates + random values.
+     Future upgrade: connect to real Claude AI API for genuine responses.
+
+--------------------------------------------------------------------------------
+PLANNED UPGRADES (priority order)
+--------------------------------------------------------------------------------
+
+  1. Connect agents to real Claude AI API (requires API key from anthropic.com)
+  2. Add SQLite persistence (conversation history, node history)
+  3. Build Windows .exe installer with PyInstaller (true one-click, no Python needed)
+  4. Add /api/conversations endpoint and display in UI
+  5. Add user accounts / simple login
+  6. Connect to real business data (Stripe, Google Analytics, etc.)
+  7. Build Chromebook web-app version (PWA)
+
+--------------------------------------------------------------------------------
+COLLABORATION NOTES
+--------------------------------------------------------------------------------
+
+  Shannon Bryan Kelly:
+    Role: Architect, vision holder, product direction, business strategy
+    Age: 55 | ADHD, dyslexia, dysgraphia, monitored for full-spectrum autism
+    Style: Non-technical founder directing AI partners as a coordinated team
+    Communication: Needs bullet points, chunking, plain language, no jargon
+
+  From the README:
+    "This system was designed as part of a broader exploration of
+     human-AI collaborative architecture — specifically how a non-traditional
+     thinker (neurodivergent, systems-intuitive) can architect AI pipelines
+     by directing multiple AI models as a coordinated team."
+
+  Contact: sbryank1234@gmail.com
+
+--------------------------------------------------------------------------------
+END OF LOG
+  Created:      April 10, 2026
+  Last updated: April 10, 2026
+  Next update:  When v5.1.0 work begins (thread safety + persistence)
+================================================================================
