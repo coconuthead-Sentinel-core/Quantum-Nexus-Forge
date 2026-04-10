@@ -145,7 +145,7 @@ def _live_response(agent_name: str, prompt: str) -> str:
                 {"role": "system",  "content": system_prompt},
                 {"role": "user",    "content": prompt},
             ],
-            max_tokens=150,
+            max_completion_tokens=150,
             temperature=0.8,
         )
         return response.choices[0].message.content.strip()
