@@ -33,7 +33,7 @@ if not MOCK_MODE:
         _azure_client = AzureOpenAI(
             azure_endpoint=_ENDPOINT,
             api_key=_API_KEY,
-            api_version="2024-02-01",
+            api_version="2025-01-01-preview",
         )
         print(f"[Azure] Connected to {_ENDPOINT} — deployment: {_DEPLOYMENT}")
     except ImportError:
