@@ -22,6 +22,14 @@ from datetime import datetime
 
 # Allow running from project root
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Load .env from project root (enables live Azure mode if configured)
+try:
+    from dotenv import load_dotenv
+    load_dotenv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env"))
+except ImportError:
+    pass
+
 os.environ.setdefault("MOCK_AI", "true")
 
 from azure_adapter import get_agent_response
