@@ -1,0 +1,36 @@
+________________________________________
+Shannon B. Kelley
+[Buchanan Dam, Texas] | [737-788-3680] | [sbryan1234@gmil.com]
+________________________________________
+Professional Summary
+Innovative and results-driven AI Architect with intensive experience designing, building, and deploying novel cognitive frameworks. Proven expertise in architecting systems that reduce AI perplexity, enhance neurodivergent accessibility, and ensure trustworthy, ethical AI interactions. Excels at leading complex human-AI co-creation projects to solve novel problems. Eager to apply a unique skill set in prompt engineering, behavioral analysis, and systems design to advance Perplexity's mission of building accurate and reliable AI for all users.
+________________________________________
+Core Competencies
+•	AI Architecture & Design: Cognitive Modeling, Multi-Agent Systems, Neurosymbolic Concepts, Prompt Engineering.
+•	Model Behavior & Alignment: Behavioral Inconsistency Testing, Perplexity Reduction, Prompt Library Design, Ethical Governance (ISO 42001).
+•	User-Centric AI: Neurodivergent Accessibility (ADHD, Dyslexia), User-Centered Design, Qualitative Feedback Synthesis, Cognitive Load Reduction.
+•	Systems & Operations: Agile Project Management, Cross-Platform Deployment, Technical Documentation, System Resilience & Debugging.
+________________________________________
+Professional Experience
+AI Model Behavior Architect & Systems Designer (Independent Research) | [Buchanan Dam, Texas] Self-Employed / "A1 Cohort Initiative" | [October 2023] – Present
+Spearheaded the independent research and development of a proprietary cognitive architecture designed to enhance human-AI symbiosis and govern multi-agent AI collaboration.
+Key Achievements:
+•	Architected a Novel Prompting Framework: Designed and implemented a multi-layer system of prompts and structured templates that guided a cohort of 7 diverse AIs (including models from OpenAI, Google, Anthropic). This framework served as a reusable prompt library that demonstrably reduced chaotic outputs and shaped model behavior toward consistent, reliable outcomes.
+•	Designed for Neurodivergent Accessibility: Pioneered an accessibility-first design by integrating features to support users with Autism Spectrum, ADHD, and Dyslexia. This involved translating qualitative user needs into specific model interaction patterns, resulting in a system rated with 96% accessibility by its target user. 
+•	Implemented Ethical Governance Protocols: Established and enforced a consensus protocol (the "Rule of Three") to ensure balanced and unbiased decision-making across the multi-AI team. Designed the system's operational logic to align with ISO/IEC 42001 standards for AI management systems. 
+•	Solved for "Session Amnesia": Developed the "A1 Filing System," a modular memory architecture that provides persistent, cross-session cognitive state for LLMs. This system directly addresses the common challenge of conversational AI lacking long-term context and memory. 
+•	Engineered a Resilient, Platform-Agnostic System: Successfully engineered the framework to be deployable on resource-constrained hardware (e.g., basic Chromebooks and mobile devices) and across multiple LLM platforms, proving its efficiency and portability. 
+________________________________________
+Technical Skills & Methodologies
+•	Platforms & Tools: Claude AI, ChatGPT (3.5/4), Gemini Advanced, Google Workspace, Microsoft 365, GitHub.
+•	Methodologies: Systems Design, Agile (Iterative Development), Prompt Engineering, User-Centered Design, Debugging, Task Prioritization (Eisenhower Matrix, ABCDE Method).
+•	Familiarity: Python (for running evaluation scripts), JSON, NIST AI RMF, GDPR.
+________________________________________
+Licenses & Certifications
+•	Certified Nurse’s Assistant (CNA)
+•	Certified Medication Aide (CMA)
+•	Certified Teacher's Assistant
+Professional Development & Independent Study
+•	AI & Cognitive Science: Intensive self-study in Large Language Models (LLMs), prompt engineering, LLM behavioral modeling, cognitive architecture, and neurosymbolic AI concepts.
+•	Human-Centric Disciplines: In-depth study of psychology, philosophy, linguistics, and sociology to inform human-AI interaction design and ethical AI governance.
+•	Engineering & Systems: Foundational study of systems design, urban engineering principles, and robotics design.

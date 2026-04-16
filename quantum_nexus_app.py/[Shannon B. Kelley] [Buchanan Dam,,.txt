@@ -1,0 +1,13 @@
+[Shannon B. Kelley] [Buchanan Dam,, Texas | [737-788-3680]  [sbryan1234@gmil.com] [7/14/2025]
+
+ Hiring Manager Perplexity AI 115 Sansome St, Suite 900 San Francisco, CA 94105 Subject: Application for Model Behavior Architect 
+
+Dear Hiring Team,
+I am writing to express my enthusiastic interest in the Model Behavior Architect position, which I discovered through my research into companies at the forefront of building trustworthy and reliable AI. As an independent AI architect with intensive, hands-on experience designing novel cognitive frameworks, Perplexity’s mission to build accurate AI that powers human decision-making resonates deeply with the core principles of my work.
+For the past several years, I have been singularly focused on a challenge that sits at the heart of your work: reducing AI perplexity and shaping model behavior. My project, the "A1 Cohort Initiative," was conceived as a living lab to solve this exact problem. I architected a multi-layer prompting framework to govern a diverse cohort of seven AI models, transforming their chaotic, inconsistent outputs into a stream of reliable and collaborative work. This system wasn't just a project; it was a practical demonstration of how to design and implement the kind of reusable frameworks and prompt libraries mentioned in your job description.
+My approach is unique in that I design for the human on the other side of the screen. I pioneered an accessibility-first design to support neurodivergent users, translating qualitative user needs into specific, effective model interaction patterns. This experience has given me a deep, practical understanding of how to align model behavior with product goals, moving beyond theory to build systems that are genuinely useful and intuitive. I believe this "hacker spirit"—this drive to solve complex human-AI interaction puzzles from the ground up—is exactly what is needed to excel in this role.
+My background is a blend of systems design, applied psychology, and ethical governance, which has allowed me to not only engineer prompts but to architect the entire behavioral ecosystem in which they operate. I am eager to bring my unique skill set and passion for building better AI to the team at Perplexity.
+Thank you for considering my application. I have attached my resume for your review and have prepared a detailed project summary of my A1 system. I look forward to the possibility of discussing how my experience can contribute to Perplexity's continued success.
+Sincerely,
+Shannon B. Kelly
+
