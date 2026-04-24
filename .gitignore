@@ -18,3 +18,14 @@ desktop.ini
 
 # Logs
 *.log
+
+# Local secrets / publication hygiene
+.env.txt
+
+# Local sidecar artifacts not intended for GitHub publication
+enterprise_docs/
+QNF-FORGE-BUILD-SQL_2026-03-11_v001.sql/
+QNF-FORGE-CONTROL_2026-03-11_v001.txt/
+QNF-FORGE-DATA-SEED_2026-03-11_v001.csv/
+QNF-FORGE-README_2026-03-11_v001.docx/
+QNF-SPOKE_CHAT-UPLOAD_2026-03/

@@ -9,7 +9,8 @@ Falls back to mock responses automatically when Azure is not configured.
 
 Usage:
   - Set MOCK_AI=true in .env for development (no Azure needed)
-  - Set AOAI_ENDPOINT + AOAI_API_KEY + AOAI_DEPLOYMENT in .env for production
+  - Set AOAI_ENDPOINT + AOAI_KEY + AOAI_CHAT_DEPLOYMENT in .env for production
+  - Legacy names AOAI_API_KEY and AOAI_DEPLOYMENT are still accepted
 """
 
 import os
@@ -18,10 +19,18 @@ from typing import Optional
 
 # ── Determine mode ────────────────────────────────────────────────────────────
 
+def _first_env(*names: str, default: str = "") -> str:
+    for name in names:
+        value = os.getenv(name, "").strip()
+        if value:
+            return value
+    return default
+
+
 _MOCK_FORCED = os.getenv("MOCK_AI", "true").lower() == "true"
-_ENDPOINT    = os.getenv("AOAI_ENDPOINT", "")
-_API_KEY     = os.getenv("AOAI_API_KEY", "")
-_DEPLOYMENT  = os.getenv("AOAI_DEPLOYMENT", "gpt-4o")
+_ENDPOINT = _first_env("AOAI_ENDPOINT")
+_API_KEY = _first_env("AOAI_KEY", "AOAI_API_KEY")
+_DEPLOYMENT = _first_env("AOAI_CHAT_DEPLOYMENT", "AOAI_DEPLOYMENT", default="gpt-4o")
 
 MOCK_MODE = _MOCK_FORCED or not _ENDPOINT or not _API_KEY
 
@@ -81,6 +90,8 @@ AGENT_SYSTEM_PROMPTS = {
         "Keep responses to 2–3 sentences. Use the language of systems, structure, and archives."
     ),
 }
+
+AGENTS = list(AGENT_SYSTEM_PROMPTS.keys())
 
 # ── Mock response templates (used when MOCK_MODE = True) ─────────────────────
 
