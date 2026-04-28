@@ -18,6 +18,13 @@ desktop.ini
 
 # Logs
 *.log
+*.lock
+*.accdb
+dist/
+build/
+_runtime/
+.claude/
+~/.claude/
 
 # Local secrets / publication hygiene
 .env.txt
