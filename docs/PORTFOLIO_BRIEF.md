@@ -6,6 +6,12 @@
 
 A working **multi-agent AI orchestration platform** with a Flask REST API, a tri-zone (GREEN / YELLOW / RED) entropy-driven memory system, and an animated SVG dashboard visualizing the symbolic reasoning lattice in real time. **Mock-first developer experience** (no Azure account required for local demo); live Azure mode is config-driven. Local automated validation green: `pytest -q` → 15 passed (2026-04-24).
 
+## Naming
+
+Canonical public name: **Quantum Nexus Forge**.
+`Quantum Nexus` is acceptable only when the platform context is explicit.
+`Nexus` alone is not an approved short form.
+
 ## Role demonstrated
 
 **AI Engineer / AI Orchestrator Architect** — multi-agent system design, REST API implementation, real-time visualization, mock-first DX, automated test discipline.
@@ -56,10 +62,10 @@ This honesty matters: a senior engineer reviewer evaluating credibility will loo
 | Portfolio piece | Relationship |
 |---|---|
 | **Sentinel-of-sentinel-s-Forge** (LIB-PROJ-001) | Production-grade FastAPI + Azure OpenAI + Cosmos DB + JWT/RBAC + Stripe — the "production-graduated" version of this same orchestration pattern |
-| **Forge-Stack-A1 / Sentinel Prime Network** (LIB-PROJ-002) | Three-tier scaffold (back/middle/front) with FastAPI MVP backend — the "platform" layer this project would slot into |
+| **Sentinel Prime Network** (LIB-PROJ-002) | Three-tier scaffold (back/middle/front) with FastAPI MVP backend; `Forge-Stack-A1` is the internal stack label for that build |
 | **Quantum Nexus Forge** (this project — LIB-PROJ-003) | **Standalone MVP** — same multi-agent orchestration pattern, smaller scope, Flask instead of FastAPI, tri-zone memory model + live SVG dashboard |
 
-The three together demonstrate the same architectural instincts at three scales: production-grade enterprise (Sentinel-Forge), platform scaffold (Forge-Stack-A1), and proof-of-concept MVP (this project).
+The three together demonstrate the same architectural instincts at three scales: production-grade enterprise (Sentinel-Forge), platform scaffold (Sentinel Prime Network), and proof-of-concept MVP (this project).
 
 ## Author
 

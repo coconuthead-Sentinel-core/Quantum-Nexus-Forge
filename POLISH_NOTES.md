@@ -8,6 +8,8 @@ Additive polish only — surface portfolio-readable summaries and audit trail.
 This file records the polish pass applied during the multi-project portfolio sprint
 (LIB-PROJ-001 Sentinel-Forge → LIB-PROJ-002 Forge-Stack-A1 → **LIB-PROJ-003 Quantum Nexus Forge**).
 
+Naming note: the canonical public name is **Quantum Nexus Forge**. `Quantum Nexus` may be used only when the platform context is explicit; `Nexus` alone is forbidden.
+
 ---
 
 ## Why this pass happened
@@ -62,11 +64,11 @@ Recruiter-targeted one-pager summarizing the architecture, the role categories t
 | | Project | Status |
 |---|---|---|
 | 1 | Sentinel-of-sentinel-s-Forge | LIB-PROJ-001 — polished 2026-04-28 |
-| 2 | Forge-Stack-A1 / Sentinel Prime Network | LIB-PROJ-002 — backend MVP shipped 2026-04-28 |
+| 2 | Sentinel Prime Network (internal stack label: Forge-Stack-A1) | LIB-PROJ-002 — backend MVP shipped 2026-04-28 |
 | **3** | **Quantum Nexus Forge** | **LIB-PROJ-003 — polish-surfaced 2026-04-28** |
 | 4 | Sovereign Forge | (next) |
 | 5 | enterprise-ai-reliability-platform-v1 | (queued) |
-| 6 | sentinel-forge-cognitive-orchestrator | (queued) |
+| 6 | Sentinel Forge Cognitive AI Orchestrator | (queued) |
 
 ---
 
