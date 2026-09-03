@@ -1,6 +1,6 @@
 ================================================================================
   QUANTUM NEXUS FORGE — PROJECT LOG
-  Created by: Shannon Bryan Kelly & Claude AI
+  Created by: Shannon Brian Kelley & Claude AI
   Permanent Record of All Work and Decisions
 ================================================================================
 
@@ -14,7 +14,7 @@ PROJECT IDENTITY
 --------------------------------------------------------------------------------
 
   Name:       Quantum Nexus Forge
-  Architect:  Shannon Bryan Kelly (Coconut Head)
+  Architect:  Shannon Brian Kelley (Coconut Head)
   AI Partner: Claude AI (Anthropic) — primary technical implementation
   Also worked with: ChatGPT, Gemini Advanced, Sora
   Stack:      Python · Flask · HTML/CSS/JS · SVG Animation
@@ -24,7 +24,7 @@ PROJECT IDENTITY
   Vision:
     "Like a Windows 95 CD-ROM — you put it in, you hit run,
      and the whole system comes online."
-    — Shannon Bryan Kelly
+    — Shannon Brian Kelley
 
   Goal:
     A self-installing, click-to-run AI orchestration platform that:
@@ -176,7 +176,7 @@ PLANNED UPGRADES (priority order)
 COLLABORATION NOTES
 --------------------------------------------------------------------------------
 
-  Shannon Bryan Kelly:
+  Shannon Brian Kelley:
     Role: Architect, vision holder, product direction, business strategy
     Age: 55 | ADHD, dyslexia, dysgraphia, monitored for full-spectrum autism
     Style: Non-technical founder directing AI partners as a coordinated team

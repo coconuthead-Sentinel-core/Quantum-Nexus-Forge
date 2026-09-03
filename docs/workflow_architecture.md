@@ -1,7 +1,7 @@
 # Quantum Nexus Forge — Origin Architecture
 
 **Document type:** Strategic origin memo  
-**Source:** Cross-platform AI workflow developed by Shannon Bryan Kelly  
+**Source:** Cross-platform AI workflow developed by Shannon Brian Kelley  
 **Recorded by:** Microsoft Copilot  
 **Integrated into repo by:** Claude AI (Anthropic)
 
@@ -9,7 +9,7 @@
 
 ## The Real-World System That Built This Project
 
-Before a single line of code was written, Shannon Bryan Kelly had already built and was actively operating a **multi-agent AI orchestration system** — manually, across live platforms.
+Before a single line of code was written, Shannon Brian Kelley had already built and was actively operating a **multi-agent AI orchestration system** — manually, across live platforms.
 
 The Quantum Nexus Forge is the technical implementation of that system.
 
@@ -51,7 +51,7 @@ The Quantum Nexus Forge takes this same architecture and runs it as a software s
 
 | Real Platform | Forge Agent | Why They Match |
 |---------------|-------------|----------------|
-| **Shannon Bryan Kelly** | **Shannon-Sentinel** | The lead architect. Activates the system, sets resonance, drives direction. The human becomes the primary agent. |
+| **Shannon Brian Kelley** | **Shannon-Sentinel** | The lead architect. Activates the system, sets resonance, drives direction. The human becomes the primary agent. |
 | **Speechify** | **Mirror-Pool** | Both compress and reflect. Speechify summarizes audio — Mirror-Pool detects patterns and reflects them back with clarity. |
 | **Cross-platform relay** | **Nexus-Node** | The bridge between all components. Nexus-Node connects agents the same way the relay connects platforms. |
 | **Claude AI** | **Omega-1** | Both handle deep processing and long-form synthesis. Claude holds the archive — Omega-1 integrates at the deepest layer of the engine. |
@@ -111,7 +111,7 @@ All three repositories live under the `coconuthead-Sentinel-core` GitHub organiz
 
 ## Author
 
-**Shannon Bryan Kelly**  
+**Shannon Brian Kelley**  
 AI Systems Architect · Cognitive Interface Designer  
 sbryank1234@gmail.com
 

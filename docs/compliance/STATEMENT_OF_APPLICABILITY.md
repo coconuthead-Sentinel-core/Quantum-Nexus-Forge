@@ -3,7 +3,7 @@
 
 **Template source:** ICT Institute — Statement of Applicability ISO 27001-2022 (CC Attribution License)
 **Standard:** ISO/IEC 27001:2022 — Annex A Controls
-**Prepared by:** Shannon Bryan Kelly
+**Prepared by:** Shannon Brian Kelley
 **Date:** April 2026
 **Review Date:** April 2027
 
@@ -25,7 +25,7 @@ This Statement of Applicability documents which ISO 27001:2022 Annex A controls 
 | Control | Title | Status | Implementation / Justification |
 |---------|-------|--------|-------------------------------|
 | 5.1 | Policies for information security | ✅ | `INFORMATION_SECURITY_POLICY.md` — this document suite |
-| 5.2 | Information security roles and responsibilities | ✅ | Single owner: Shannon Bryan Kelly — all roles |
+| 5.2 | Information security roles and responsibilities | ✅ | Single owner: Shannon Brian Kelley — all roles |
 | 5.3 | Segregation of duties | ➖ | Not applicable — single-person operation |
 | 5.4 | Management responsibilities | ✅ | Owner is sole decision-maker |
 | 5.5 | Contact with authorities | ⚠️ | Not formally established — will document before multi-user deployment |

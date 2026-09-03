@@ -3,7 +3,7 @@
 
 **Template source:** ICT Institute — Incidents-Data-breaches-Nonconformities (CC Attribution License)
 **Standard:** ISO/IEC 27001:2022 | GDPR Article 33
-**Maintained by:** Shannon Bryan Kelly
+**Maintained by:** Shannon Brian Kelley
 **Last Updated:** April 2026
 
 ---
@@ -57,7 +57,7 @@ When an incident occurs, copy and fill this template:
 **Date Resolved:** YYYY-MM-DD
 **Type:** Security Incident / Data Breach / AI Policy Violation / Nonconformity
 **Severity:** CRITICAL / HIGH / MEDIUM / LOW
-**Detected By:** Shannon Bryan Kelly / Azure Alert / CI Pipeline / Other
+**Detected By:** Shannon Brian Kelley / Azure Alert / CI Pipeline / Other
 
 **Description:**
 [What happened? What was affected?]

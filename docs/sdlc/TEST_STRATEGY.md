@@ -1,7 +1,7 @@
 # Test Strategy
 ## Quantum Nexus Forge v5.0.2
 
-**Architect:** Shannon Bryan Kelly
+**Architect:** Shannon Brian Kelley
 **Implementation:** Claude AI (Anthropic)
 **Date:** April 2026
 

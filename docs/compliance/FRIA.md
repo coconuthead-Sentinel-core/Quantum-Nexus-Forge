@@ -2,7 +2,7 @@
 ## Quantum Nexus Forge v5.0.2
 
 **Template source:** ICT Institute — FRIA Assessment Template V2.0 (CC Attribution License)
-**Prepared by:** Shannon Bryan Kelly
+**Prepared by:** Shannon Brian Kelley
 **Date:** April 2026
 **Review Date:** April 2027
 
@@ -15,7 +15,7 @@
 | System name | Quantum Nexus Forge |
 | Version | 5.0.2 |
 | Purpose | Multi-agent AI orchestration for knowledge synthesis |
-| Deployer | Shannon Bryan Kelly |
+| Deployer | Shannon Brian Kelley |
 | AI Provider | Microsoft Azure OpenAI (GPT-5.4-nano) |
 | Deployment context | Local / private — portfolio and personal use |
 | Geographic scope | United States (primarily) |
@@ -113,7 +113,7 @@ No full conformity assessment required at current deployment scope.
 
 | Measure | Owner | Status |
 |---------|-------|--------|
-| AI Policy published | Shannon Bryan Kelly | ✅ Complete |
+| AI Policy published | Shannon Brian Kelley | ✅ Complete |
 | No personal data storage in default mode | Platform design | ✅ Built-in |
 | Azure OpenAI content moderation enabled | Microsoft | ✅ Active |
 | Incident reporting process defined | AI Policy §10 | ✅ Complete |
@@ -126,10 +126,10 @@ No full conformity assessment required at current deployment scope.
 
 | Activity | Frequency | Owner |
 |---------|-----------|-------|
-| Review AI outputs for quality and rights compliance | Ongoing | Shannon Bryan Kelly |
-| Update FRIA when new features added | Per release | Shannon Bryan Kelly |
-| Review if deployment scope expands | Before expansion | Shannon Bryan Kelly |
-| Review EU AI Act implementing rules | Annually | Shannon Bryan Kelly |
+| Review AI outputs for quality and rights compliance | Ongoing | Shannon Brian Kelley |
+| Update FRIA when new features added | Per release | Shannon Brian Kelley |
+| Review if deployment scope expands | Before expansion | Shannon Brian Kelley |
+| Review EU AI Act implementing rules | Annually | Shannon Brian Kelley |
 
 ---
 
@@ -137,7 +137,7 @@ No full conformity assessment required at current deployment scope.
 
 | Role | Name | Date |
 |------|------|------|
-| System Architect / Owner | Shannon Bryan Kelly | April 2026 |
+| System Architect / Owner | Shannon Brian Kelley | April 2026 |
 
 ---
 

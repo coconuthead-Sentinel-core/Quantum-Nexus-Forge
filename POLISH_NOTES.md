@@ -44,8 +44,8 @@ Recruiter-targeted one-pager summarizing the architecture, the role categories t
 - `docs/` existing files — preserved
 - `.github/` CI configuration — preserved
 - `.env.example` — preserved
-- Author-name spelling variant in `README.md` ("Shannon Bryan Kelly") — left as-is per
-  no-rename constraint; canonical spelling on resume is "Shannon Brian Kelly"
+- Author-name spelling variant in `README.md` ("Shannon Brian Kelley") — left as-is per
+  no-rename constraint; canonical spelling on resume is "Shannon Brian Kelley"
 
 ---
 

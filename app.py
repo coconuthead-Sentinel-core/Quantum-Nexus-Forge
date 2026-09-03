@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 QUANTUM NEXUS FORGE v5.0.2 - Complete Backend
-Architect: Shannon Brian Kelly (Coconut Head)
+Architect: Shannon Brian Kelley (Coconut Head)
 Implementation: Claude AI (Anthropic)
 
 HOW TO RUN:
@@ -381,7 +381,7 @@ def status():
     return jsonify({
         "status":          "GREEN",
         "version":         "5.0.2",
-        "architect":       "Shannon Brian Kelly",
+        "architect":       "Shannon Brian Kelley",
         "uptime_seconds":  int((datetime.now() - engine.start_time).total_seconds()),
         "resonance":       round(engine.resonance, 3),
         "ai_mode":         ai_mode,
@@ -409,7 +409,7 @@ def process_node():
 if __name__ == "__main__":
     print("=" * 60)
     print("  QUANTUM NEXUS FORGE v5.0.2")
-    print("  Architect : Shannon Brian Kelly (Coconut Head)")
+    print("  Architect : Shannon Brian Kelley (Coconut Head)")
     print("  ----------------------------------------")
     print("  Multi-Assistant : http://localhost:5000/")
     print("  Dashboard       : http://localhost:5000/dashboard")

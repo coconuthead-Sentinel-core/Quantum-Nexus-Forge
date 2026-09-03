@@ -1,5 +1,5 @@
 # Commercial Launch & Payments Compliance Checklist
-## The Forge Trilogy — Shannon Bryan Kelly
+## The Forge Trilogy — Shannon Brian Kelley
 
 **Date:** April 2026
 **Jurisdiction:** State of Texas, United States
@@ -22,7 +22,7 @@
 **What:** Decide the official legal entity name. Must be unique in Texas.
 **Options:**
 - "Forge Trilogy LLC" (covers all three platforms under one entity)
-- "Shannon Bryan Kelly AI LLC"
+- "Shannon Brian Kelley AI LLC"
 - "Cognitive Forge Labs LLC"
 
 **Action:** Search the Texas SoS name database before filing:
@@ -43,7 +43,7 @@
 **What you need to file:**
 - [ ] LLC name (must be available)
 - [ ] Registered Agent name and Texas street address (can be you, can't be a P.O. Box)
-- [ ] Organizer name and address (you — Shannon Bryan Kelly)
+- [ ] Organizer name and address (you — Shannon Brian Kelley)
 - [ ] Purpose statement ("AI software platform services")
 - [ ] Member-managed or manager-managed structure
 - [ ] Payment of $300 filing fee
@@ -64,7 +64,7 @@
 - Form: SS-4 (online application takes 10 minutes, EIN issued immediately)
 
 **What you need:**
-- [ ] Responsible party name: Shannon Bryan Kelly
+- [ ] Responsible party name: Shannon Brian Kelley
 - [ ] Your Social Security Number (SSN) — not stored by IRS after issuance
 - [ ] LLC name (must match SoS filing exactly)
 - [ ] Business address in Texas
@@ -122,7 +122,7 @@
 - [ ] Business phone number
 - [ ] Business website URL (must be live and include Terms, Privacy Policy, Refund Policy)
 - [ ] Business description ("AI SaaS platform — cognitive processing and AI orchestration")
-- [ ] Beneficial owner info: Shannon Bryan Kelly (name, address, DOB, SSN last 4)
+- [ ] Beneficial owner info: Shannon Brian Kelley (name, address, DOB, SSN last 4)
 - [ ] Government-issued ID photo (driver's license or passport)
 - [ ] Bank account (routing + account number for payouts)
 - [ ] Business bank statement (sometimes requested)

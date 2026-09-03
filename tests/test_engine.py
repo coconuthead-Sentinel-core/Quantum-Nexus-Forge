@@ -1,7 +1,7 @@
 """
 Quantum Nexus Forge — Unit Tests
 =================================
-Architect: Shannon Bryan Kelly
+Architect: Shannon Brian Kelley
 Implementation: Claude AI (Anthropic)
 """
 

@@ -1,7 +1,7 @@
 # Product Requirements Document (PRD)
 ## Quantum Nexus Forge v5.0.2
 
-**Architect:** Shannon Bryan Kelly
+**Architect:** Shannon Brian Kelley
 **Implementation:** Claude AI (Anthropic)
 **Date:** April 2026
 **Status:** Production
@@ -10,7 +10,7 @@
 
 ## 1. Purpose
 
-Quantum Nexus Forge is a multi-agent AI orchestration platform that routes user prompts through five specialized AI agents and returns coordinated, multi-perspective responses in real time. It is the automated software implementation of a cross-platform AI workflow Shannon Bryan Kelly developed and operated manually across five platforms (Copilot, Claude, Speechify, Labs, Microsoft 365).
+Quantum Nexus Forge is a multi-agent AI orchestration platform that routes user prompts through five specialized AI agents and returns coordinated, multi-perspective responses in real time. It is the automated software implementation of a cross-platform AI workflow Shannon Brian Kelley developed and operated manually across five platforms (Copilot, Claude, Speechify, Labs, Microsoft 365).
 
 ---
 
@@ -18,7 +18,7 @@ Quantum Nexus Forge is a multi-agent AI orchestration platform that routes user 
 
 | User Type | Description |
 |-----------|-------------|
-| **Primary — Shannon Bryan Kelly** | Architect and operator. Uses the platform for cognitive orchestration, business intelligence, and AI-assisted decision making |
+| **Primary — Shannon Brian Kelley** | Architect and operator. Uses the platform for cognitive orchestration, business intelligence, and AI-assisted decision making |
 | **Secondary — Human reviewers** | HR representatives, portfolio reviewers, collaborators reviewing the project on GitHub |
 | **Tertiary — AI systems** | Other AI assistants (Copilot, Gemini, ChatGPT) that interact with or reference the platform |
 

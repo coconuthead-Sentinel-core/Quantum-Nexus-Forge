@@ -3,7 +3,7 @@
 
 **Effective Date:** April 10, 2026
 **Last Updated:** April 10, 2026
-**Controller:** [YOUR LLC NAME], operated by Shannon Bryan Kelly
+**Controller:** [YOUR LLC NAME], operated by Shannon Brian Kelley
 
 > **⚠️ FILL IN BEFORE PUBLISHING:**
 > Replace every `[YOUR LLC NAME]`, `[YOUR EMAIL]`, and `[YOUR TEXAS ADDRESS]` with your real information before this policy goes live.
@@ -179,7 +179,7 @@ We may update this Privacy Policy. Material changes will be communicated by:
 **For privacy questions, data requests, or to exercise your rights:**
 
 [YOUR LLC NAME]
-Attn: Privacy — Shannon Bryan Kelly
+Attn: Privacy — Shannon Brian Kelley
 [YOUR TEXAS ADDRESS]
 Texas, United States
 Email: [YOUR EMAIL]

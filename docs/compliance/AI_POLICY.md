@@ -2,7 +2,7 @@
 ## Quantum Nexus Forge v5.0.2
 
 **Template source:** ICT Institute — AI Policy Template V1.0 (CC Attribution License)
-**Adapted by:** Shannon Bryan Kelly
+**Adapted by:** Shannon Brian Kelley
 **Implementation:** Claude AI (Anthropic)
 **Effective Date:** April 2026
 **Review Date:** April 2027
@@ -13,7 +13,7 @@
 
 This policy governs the design, development, operation, and use of artificial intelligence within the **Quantum Nexus Forge** platform. It applies to:
 
-- Shannon Bryan Kelly (Architect / Owner)
+- Shannon Brian Kelley (Architect / Owner)
 - Any contractors, consultants, or contributors working on the platform
 - Any end users interacting with the system
 

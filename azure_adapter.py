@@ -1,7 +1,7 @@
 """
 Quantum Nexus Forge — Azure OpenAI Adapter
 ==========================================
-Architect: Shannon Bryan Kelly
+Architect: Shannon Brian Kelley
 Implementation: Claude AI (Anthropic)
 
 Provides real Azure OpenAI responses for each named agent.

@@ -3,7 +3,7 @@
 
 **Template source:** ICT Institute — Assets-and-risks-ISO-27001 (CC Attribution License)
 **Standard:** ISO/IEC 27001:2022
-**Prepared by:** Shannon Bryan Kelly
+**Prepared by:** Shannon Brian Kelley
 **Date:** April 2026
 **Review Date:** April 2027
 
@@ -13,22 +13,22 @@
 
 | ID | Asset | Type | Owner | Classification | Location |
 |----|-------|------|-------|----------------|---------|
-| A-001 | Azure OpenAI API Key | Credential | Shannon Bryan Kelly | 🔴 Confidential | `.env` file (local) |
-| A-002 | Azure Endpoint URL | Credential | Shannon Bryan Kelly | 🔴 Confidential | `.env` file (local) |
-| A-003 | Azure Deployment Name (gpt-5.4-nano) | Credential | Shannon Bryan Kelly | 🔴 Confidential | `.env` file (local) |
-| A-004 | `app.py` — Flask backend | Source code | Shannon Bryan Kelly | 🟡 Internal | GitHub / local |
-| A-005 | `azure_adapter.py` — AI adapter | Source code | Shannon Bryan Kelly | 🟡 Internal | GitHub / local |
-| A-006 | `frontend/index.html` — Chat UI | Source code | Shannon Bryan Kelly | 🟢 Public | GitHub / local |
-| A-007 | `frontend/dashboard.html` — Metrics UI | Source code | Shannon Bryan Kelly | 🟢 Public | GitHub / local |
-| A-008 | `tests/test_engine.py` — Unit tests | Source code | Shannon Bryan Kelly | 🟢 Public | GitHub / local |
-| A-009 | `evaluation/eval_results.json` — Scores | Data | Shannon Bryan Kelly | 🟢 Public | GitHub / local |
-| A-010 | `.github/workflows/python-app.yml` — CI | Configuration | Shannon Bryan Kelly | 🟢 Public | GitHub |
-| A-011 | `requirements.txt` | Configuration | Shannon Bryan Kelly | 🟢 Public | GitHub / local |
-| A-012 | SDLC documentation suite | Documentation | Shannon Bryan Kelly | 🟢 Public | GitHub / local |
-| A-013 | Compliance documentation suite | Documentation | Shannon Bryan Kelly | 🟢 Public | GitHub / local |
-| A-014 | GitHub repository | Platform | Shannon Bryan Kelly | 🟢 Public | GitHub (Microsoft) |
-| A-015 | Azure OpenAI resource | Platform | Shannon Bryan Kelly | 🔴 Confidential | Azure cloud |
-| A-016 | Developer laptop | Hardware | Shannon Bryan Kelly | 🟡 Internal | Home office |
+| A-001 | Azure OpenAI API Key | Credential | Shannon Brian Kelley | 🔴 Confidential | `.env` file (local) |
+| A-002 | Azure Endpoint URL | Credential | Shannon Brian Kelley | 🔴 Confidential | `.env` file (local) |
+| A-003 | Azure Deployment Name (gpt-5.4-nano) | Credential | Shannon Brian Kelley | 🔴 Confidential | `.env` file (local) |
+| A-004 | `app.py` — Flask backend | Source code | Shannon Brian Kelley | 🟡 Internal | GitHub / local |
+| A-005 | `azure_adapter.py` — AI adapter | Source code | Shannon Brian Kelley | 🟡 Internal | GitHub / local |
+| A-006 | `frontend/index.html` — Chat UI | Source code | Shannon Brian Kelley | 🟢 Public | GitHub / local |
+| A-007 | `frontend/dashboard.html` — Metrics UI | Source code | Shannon Brian Kelley | 🟢 Public | GitHub / local |
+| A-008 | `tests/test_engine.py` — Unit tests | Source code | Shannon Brian Kelley | 🟢 Public | GitHub / local |
+| A-009 | `evaluation/eval_results.json` — Scores | Data | Shannon Brian Kelley | 🟢 Public | GitHub / local |
+| A-010 | `.github/workflows/python-app.yml` — CI | Configuration | Shannon Brian Kelley | 🟢 Public | GitHub |
+| A-011 | `requirements.txt` | Configuration | Shannon Brian Kelley | 🟢 Public | GitHub / local |
+| A-012 | SDLC documentation suite | Documentation | Shannon Brian Kelley | 🟢 Public | GitHub / local |
+| A-013 | Compliance documentation suite | Documentation | Shannon Brian Kelley | 🟢 Public | GitHub / local |
+| A-014 | GitHub repository | Platform | Shannon Brian Kelley | 🟢 Public | GitHub (Microsoft) |
+| A-015 | Azure OpenAI resource | Platform | Shannon Brian Kelley | 🔴 Confidential | Azure cloud |
+| A-016 | Developer laptop | Hardware | Shannon Brian Kelley | 🟡 Internal | Home office |
 
 ---
 
@@ -65,11 +65,11 @@
 
 | Risk ID | Treatment | Owner | Target Date |
 |---------|-----------|-------|------------|
-| R-001 | Maintain `.gitignore`; run pre-commit secret scan | Shannon Bryan Kelly | Ongoing |
-| R-002 | Enable Azure MFA; review access quarterly | Shannon Bryan Kelly | April 2026 |
-| R-004 | Enable full disk encryption on laptop | Shannon Bryan Kelly | April 2026 |
-| R-006 | Review dependencies before each release | Shannon Bryan Kelly | Per release |
-| R-008 | Add user guidance to UI: do not enter personal data | Shannon Bryan Kelly | Next sprint |
+| R-001 | Maintain `.gitignore`; run pre-commit secret scan | Shannon Brian Kelley | Ongoing |
+| R-002 | Enable Azure MFA; review access quarterly | Shannon Brian Kelley | April 2026 |
+| R-004 | Enable full disk encryption on laptop | Shannon Brian Kelley | April 2026 |
+| R-006 | Review dependencies before each release | Shannon Brian Kelley | Per release |
+| R-008 | Add user guidance to UI: do not enter personal data | Shannon Brian Kelley | Next sprint |
 
 ---
 

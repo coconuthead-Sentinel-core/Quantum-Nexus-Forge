@@ -3,7 +3,7 @@
 
 **Template source:** ICT Institute — Register of Processing Activities (CC Attribution License)
 **Standard:** GDPR Article 30
-**Prepared by:** Shannon Bryan Kelly (Data Controller)
+**Prepared by:** Shannon Brian Kelley (Data Controller)
 **Date:** April 2026
 **Review Date:** April 2027
 
@@ -13,7 +13,7 @@
 
 | Field | Details |
 |-------|---------|
-| Controller name | Shannon Bryan Kelly |
+| Controller name | Shannon Brian Kelley |
 | Organization | Quantum Nexus Forge (sole proprietorship) |
 | Contact | [Shannon's contact — add before multi-user deployment] |
 | Data Protection Officer | Not required at current scale |

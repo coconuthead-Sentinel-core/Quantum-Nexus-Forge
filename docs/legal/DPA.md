@@ -14,7 +14,7 @@
 | Role | Party | Details |
 |------|-------|---------|
 | **Data Controller** | Customer | The entity using the Forge Trilogy platforms |
-| **Data Processor** | [YOUR LLC NAME] | Shannon Bryan Kelly, [YOUR TEXAS ADDRESS], Texas, USA |
+| **Data Processor** | [YOUR LLC NAME] | Shannon Brian Kelley, [YOUR TEXAS ADDRESS], Texas, USA |
 
 ---
 
@@ -153,7 +153,7 @@ In case of conflict, the order of precedence is:
 | Data Controller (Customer) | Data Processor ([YOUR LLC NAME]) |
 |---------------------------|----------------------------------|
 | Signed: _________________________ | Signed: _________________________ |
-| Name: _________________________ | Name: Shannon Bryan Kelly |
+| Name: _________________________ | Name: Shannon Brian Kelley |
 | Title: _________________________ | Title: Founder & Architect |
 | Date: _________________________ | Date: _________________________ |
 | Email: _________________________ | Email: [YOUR EMAIL] |

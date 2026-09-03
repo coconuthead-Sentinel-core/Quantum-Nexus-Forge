@@ -69,7 +69,7 @@ The three together demonstrate the same architectural instincts at three scales:
 
 ## Author
 
-**Shannon Brian Kelly** (variant in this repo's README: "Shannon Bryan Kelly") — Healthcare CNA → AI Systems Developer career transition.
+**Shannon Brian Kelley** (variant in this repo's README: "Shannon Brian Kelley") — Healthcare CNA → AI Systems Developer career transition.
 
 Built in collaboration with Claude AI (Anthropic).
 

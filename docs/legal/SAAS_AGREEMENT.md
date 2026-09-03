@@ -15,7 +15,7 @@
 
 | Party | Information |
 |-------|------------|
-| **Provider** | [YOUR LLC NAME], operated by Shannon Bryan Kelly, [YOUR TEXAS ADDRESS], Texas, United States |
+| **Provider** | [YOUR LLC NAME], operated by Shannon Brian Kelley, [YOUR TEXAS ADDRESS], Texas, United States |
 | **Customer** | [CUSTOMER LEGAL NAME], [CUSTOMER ADDRESS] |
 
 ---
@@ -271,7 +271,7 @@ Neither party is liable for delays caused by events beyond their reasonable cont
 |---------|---------|
 | **[YOUR LLC NAME]** | **[CUSTOMER LEGAL NAME]** |
 | Signed: _________________________ | Signed: _________________________ |
-| Name: Shannon Bryan Kelly | Name: _________________________ |
+| Name: Shannon Brian Kelley | Name: _________________________ |
 | Title: Founder & Architect | Title: _________________________ |
 | Date: _________________________ | Date: _________________________ |
 | Email: [YOUR EMAIL] | Email: _________________________ |

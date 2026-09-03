@@ -246,7 +246,7 @@ Notwithstanding arbitration, either party may seek emergency injunctive relief i
 For questions about these Terms:
 
 **[YOUR LLC NAME]**
-Attn: Legal — Shannon Bryan Kelly
+Attn: Legal — Shannon Brian Kelley
 [YOUR TEXAS ADDRESS]
 Texas, United States
 Email: [YOUR EMAIL]

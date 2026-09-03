@@ -2,7 +2,7 @@
 """
 Quantum Nexus Forge — Evaluation Pipeline
 ==========================================
-Architect: Shannon Bryan Kelly
+Architect: Shannon Brian Kelley
 Implementation: Claude AI (Anthropic)
 
 Runs a structured evaluation of the orchestration engine across

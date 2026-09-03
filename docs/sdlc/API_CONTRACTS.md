@@ -1,7 +1,7 @@
 # API / Interface Contracts
 ## Quantum Nexus Forge v5.0.2
 
-**Architect:** Shannon Bryan Kelly
+**Architect:** Shannon Brian Kelley
 **Implementation:** Claude AI (Anthropic)
 **Date:** April 2026
 **Base URL:** http://localhost:5000
@@ -101,7 +101,7 @@ None
 {
   "status": "GREEN",
   "version": "5.0.2",
-  "architect": "Shannon Brian Kelly",
+  "architect": "Shannon Brian Kelley",
   "uptime_seconds": 3600,
   "resonance": 0.923,
   "ai_mode": "live | mock"

@@ -3,7 +3,7 @@
 
 **Template source:** ICT Institute — Information Security Policy Template (CC Attribution License)
 **Standard:** ISO/IEC 27001:2022
-**Prepared by:** Shannon Bryan Kelly
+**Prepared by:** Shannon Brian Kelley
 **Effective Date:** April 2026
 **Review Date:** April 2027
 
@@ -60,13 +60,13 @@ This policy applies to:
 
 | Asset | Classification | Owner |
 |-------|---------------|-------|
-| Azure OpenAI API key | 🔴 Confidential | Shannon Bryan Kelly |
-| Azure endpoint URL | 🔴 Confidential | Shannon Bryan Kelly |
-| `.env` file | 🔴 Confidential | Shannon Bryan Kelly |
-| Source code (`app.py`, `azure_adapter.py`) | 🟡 Internal | Shannon Bryan Kelly |
-| GitHub repository (public) | 🟢 Public | Shannon Bryan Kelly |
-| SDLC documentation | 🟢 Public | Shannon Bryan Kelly |
-| Compliance documentation | 🟢 Public | Shannon Bryan Kelly |
+| Azure OpenAI API key | 🔴 Confidential | Shannon Brian Kelley |
+| Azure endpoint URL | 🔴 Confidential | Shannon Brian Kelley |
+| `.env` file | 🔴 Confidential | Shannon Brian Kelley |
+| Source code (`app.py`, `azure_adapter.py`) | 🟡 Internal | Shannon Brian Kelley |
+| GitHub repository (public) | 🟢 Public | Shannon Brian Kelley |
+| SDLC documentation | 🟢 Public | Shannon Brian Kelley |
+| Compliance documentation | 🟢 Public | Shannon Brian Kelley |
 
 ---
 
@@ -138,7 +138,7 @@ This policy applies to:
 
 | Role | Responsibility |
 |------|---------------|
-| Shannon Bryan Kelly (Data Controller / Architect) | Owns all security decisions, credential management, incident response, policy review |
+| Shannon Brian Kelley (Data Controller / Architect) | Owns all security decisions, credential management, incident response, policy review |
 
 ---
 

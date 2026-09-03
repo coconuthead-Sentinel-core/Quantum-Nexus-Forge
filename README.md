@@ -1,6 +1,6 @@
 # Quantum Nexus Forge
 
-**Architect:** Shannon Bryan Kelly  
+**Architect:** Shannon Brian Kelley  
 **Implementation:** Claude AI (Anthropic)  
 **Stack:** Python, Flask, HTML/CSS/JS, SVG animation  
 **Current documented version:** v5.0.2
@@ -158,6 +158,6 @@ The visual language (hexagonal lattice, tri-zone memory) represents a symbolic c
 
 ## Author
 
-**Shannon Bryan Kelly**  
+**Shannon Brian Kelley**  
 AI Systems Architect and Cognitive Interface Designer  
 sbryank1234@gmail.com

@@ -2,7 +2,7 @@
 ## Quantum Nexus Forge v5.0.2
 
 **Template source:** ICT Institute — DPIA Template (CC Attribution License)
-**Prepared by:** Shannon Bryan Kelly
+**Prepared by:** Shannon Brian Kelley
 **Date:** April 2026
 **Review Date:** April 2027
 
@@ -175,7 +175,7 @@ AI response returned to user
 
 | Role | Name | Date |
 |------|------|------|
-| Data Controller / Architect | Shannon Bryan Kelly | April 2026 |
+| Data Controller / Architect | Shannon Brian Kelley | April 2026 |
 
 ---
 

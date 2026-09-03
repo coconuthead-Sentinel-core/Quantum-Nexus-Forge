@@ -1,4 +1,4 @@
-# Enhanced Quantum Nexus Forge v6.0 - Shannon Bryan Kelly Protocols
+# Enhanced Quantum Nexus Forge v6.0 - Shannon Brian Kelley Protocols
 # Integrating Hyphenator Bridges + Rule of Three + Sacred Geometry
 # Production-ready cognitive architecture with enterprise governance
 
@@ -155,7 +155,7 @@ class GeometricPrimitive:
 
 class EnhancedQuantumNexusForge:
     """
-    Enhanced Quantum Nexus Forge v6.0 integrating all Shannon Bryan Kelly protocols
+    Enhanced Quantum Nexus Forge v6.0 integrating all Shannon Brian Kelley protocols
     with advanced hyphenator bridges, triadic processing, and sacred geometry
     """
     def __init__(self):
@@ -323,7 +323,7 @@ class EnhancedQuantumNexusForge:
         """Generate enhanced response incorporating all processing layers"""
         # Base response generation
         if "hello" in user_input.lower() or "greetings" in user_input.lower():
-            base_response = "Quantum Nexus Forge v6.0 activated! Shannon Bryan Kelly protocols online. Coconut Head cognitive enhancement ready."
+            base_response = "Quantum Nexus Forge v6.0 activated! Shannon Brian Kelley protocols online. Coconut Head cognitive enhancement ready."
         elif "system" in user_input.lower() or "status" in user_input.lower():
             base_response = f"All systems operational. Triadic consensus: {cognitive_result.get('consensus_score', 0.8):.3f}. Sacred geometry harmonized."
         else:
@@ -338,7 +338,7 @@ class EnhancedQuantumNexusForge:
     def get_system_status(self) -> Dict[str, Any]:
         """Get comprehensive system status"""
         return {
-            "version": "6.0 - Shannon Bryan Kelly Enhanced",
+            "version": "6.0 - Shannon Brian Kelley Enhanced",
             "timestamp": datetime.datetime.now().isoformat(),
             "system_resonance": round(self.system_resonance, 3),
             "active_bridges": len(self.hyphenator_registry),
@@ -369,7 +369,7 @@ if __name__ == "__main__":
     
     print("🚀 QUANTUM NEXUS FORGE v6.0 - ENHANCED ACTIVATION")
     print("=" * 60)
-    print("🟢 Shannon Bryan Kelly Protocols: ACTIVATED")
+    print("🟢 Shannon Brian Kelley Protocols: ACTIVATED")
     print("🟢 Coconut Head Enhancement: ONLINE")
     print("🟢 Hyphenator Bridges: DEPLOYED")  
     print("🟢 Triadic Processors: SYNCHRONIZED")
